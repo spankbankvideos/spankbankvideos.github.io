@@ -1,26 +1,23 @@
-body {
-	background-color: red;
-}
-background: linear-gradient(270deg, #ff0000, #ffab00, #fffa00, #0dff00, #00a3ff, #8d00ff);
-background-size: 1200% 1200%;
+    body {
+      animation: colorchange 20s infinite; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 20s infinite; /* Chrome and Safari */
+    }
 
--webkit-animation: rainbow 30s ease infinite;
--moz-animation: rainbow 30s ease infinite;
-animation: rainbow 30s ease infinite;
+    @keyframes colorchange
+    {
+      0%   {background: red;}
+      25%  {background: yellow;}
+      50%  {background: blue;}
+      75%  {background: green;}
+      100% {background: red;}
+    }
 
-@-webkit-keyframes rainbow {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes rainbow {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes rainbow { 
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
- 
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: red;}
+      25%  {background: yellow;}
+      50%  {background: blue;}
+      75%  {background: green;}
+      100% {background: red;}
+    }
