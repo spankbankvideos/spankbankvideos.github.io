@@ -1,5 +1,5 @@
 body {
-	background-blend-mode: multiply;
+	background-color: red;
 }
 background: linear-gradient(270deg, #ff0000, #ffab00, #fffa00, #0dff00, #00a3ff, #8d00ff);
 background-size: 1200% 1200%;
